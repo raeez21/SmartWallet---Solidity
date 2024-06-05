@@ -9,6 +9,7 @@ contract Consumer{
     }
     function deposit() public payable{
             //This just receivees from the main wallet and stores that money in this SC
+            //TODO write the corresponding logic here---> maybe move the SC money to a parent account
     }
 }
 contract SmartContractWallet {
