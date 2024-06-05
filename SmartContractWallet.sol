@@ -39,6 +39,8 @@ contract SmartContractWallet {
         
         //Checks if a guardian has already voted for this candidate
         require(nextOwnerGuardianVoted[_newOwner][msg.sender] == false, "You already voted, aborting");
+
+        //TODO Check the logic of this function for correctness---> This SC going to be deployed on real chain, so need 100% correctness
         if(_newOwner != nextOwner){
             nextOwner = _newOwner;
             guardiansResetCount = 0;
